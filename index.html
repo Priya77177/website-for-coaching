@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIPLOMA ALL SEMESTER MCQ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style type="text/css">
+     
+.quiz-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+.question {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            list-style: none;
+            padding: 0;
+        }
+ .option {
+            margin: 5px 0;
+            cursor: pointer;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+ .option:hover {
+            background-color: #f0f0f0;
+        }
+
+        .option input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Style for the feedback messages */
+        .feedback {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+
+        .option .feedback-symbol {
+            margin-left: 10px;
+        }
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightcoral;
+
+}
+
+}
+
+
+
+
+/* Additional styles for dark mode as needed */
+
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #00aaff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: default;
+    margin: 0;
+}
+/*navigation bar*/
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 150px;
+    padding: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+.container{
+
+}
+ /* ... Your existing styles ... */
+
+    /* Add hover effect for facility cards */
+
+
+                                    /*facility*/
+    .facility-card {
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .facility-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 5, 0.1);
+    }
+.col-md-4{
+    font-family: cursive;
+    background-color: skyblue;
+    
+}
+/* Add additional styles for other sections (home, about, contact, team, gallery) here */
+
+
+
+
+
+                         /* contact*/
+ /*.contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            
+
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="password"],
+        .contact-form input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input[type="text"]:focus,
+        .contact-form input[type="email"]:focus,
+        .contact-form input[type="password"]:focus,
+        .contact-form input[type="number"]:focus {
+           
+        }
+
+        .contact-form button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: gold ;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button[type="submit"]:hover {
+            background-color: #007bff;
+        }
+       /* .dark-mode .contact-form input[type="text"],
+       .dark-mode .contact-form input[type="email"],
+        .dark-mode .contact-form input[type="password"],
+        .dark-mode .contact-form input[type="number"],
+        .dark-mode .contact-form input[type="tel"] {
+           
+        
+        } */
+        
+
+/*
+#nav_2 {
+    background: yellow;
+    position: fixed;
+    top: 50%;
+    right: 3px;
+    font-size: 40px;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 20px 0px 0px 20px;
+}*/
+
+.social-icon{
+    font-size: 3rem;
+    margin: 10px;
+    
+}
+
+.h1{
+    text-align-last: center;
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="bg-primary text-white py-4">
+        <div class="container text-center">
+            <h1 class="display-4">DIPLOMA ALL SEMESTER MCQ</h1>
+         
+         <div class="dark-mode-icon"></div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownClasses" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Semester
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownClasses">
+                            <a class="dropdown-item" href="#"> Semester 1</a>
+                            <a class="dropdown-item" href="#">Semester 2</a>
+                            <a class="dropdown-item" href="#">Semester 3</a>
+                            <a class="dropdown-item" href="#">Semester 4</a>
+                            <a class="dropdown-item" href="#">Semester 5</a>
+                            <a class="dropdown-item" href="#">Semester 6</a>
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add content for other sections (home, about, contact, team, gallery) here -->
+   
+  <div class="h1">
+      <h1 style=" color: black; align-items: center; " >
+          All MC&Q of Mobile Computing (Unit - 1)
+      </h1>
+  </div>
+  <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 1: Components of mobile computing includes:
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) Mobile hardware
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) Mobile software
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) Mobile communication
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> d) All of these
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 2: In which of the following year mobile is invented?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) 1927
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) 1930 
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> c) 1973
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) 1950
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+ <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 3: The mobile phone is an invented by_____
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) Igory sikosky
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)Thomas edison 
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> c) Martin Copper
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) Tim Berner lee
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+<br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 4: What is the name of the first mobile phone invented in 1973 ?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="true">
+                <input type="checkbox"> a) Motorola DynaTAC 8000X
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) Mobira Cityman 900S
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c)  SH-100
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) Nokia 9000
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+
+<br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 5: Cell phone communication is a _____
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a)  Simplex 
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) Half Duplex 
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> c)  Full Duplex
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) Full Simplex
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+<br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 6:  What is wireless communication?
+
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a)  Sending data from one location to with the use of physical medium
+ 
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> b)  Sending data from one location to another without the use of physical medium
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) Sending data from one location to another without the use of virtual medium
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) None of these 
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 7: Android is -
+ 
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="true">
+                <input type="checkbox"> a)an operating system
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) a web browse
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c)  a web server
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) None of the above
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+
+ <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 8: Which of the following virtual machine is used by the Android operating system?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) JVM
+
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> b) Dalvik virtual machine
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c)  Simple virtual machine
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) None of the above
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 9:  Android is based on which of the following language?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="true">
+                <input type="checkbox"> a)  Java
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) C++
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c)  C
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) PHP
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+ <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 10:  What does API stand for?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="true">
+                <input type="checkbox"> a) Application Programming Interface
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) Android Programming Interface
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) Android Page Interface
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d)Application Page Interface
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 11:  Why wireless communication is used?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a)  It enables billions of people to connect to the Internet
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) Lowers the cost of network infrastructure
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c)Makes services more inexpensive
+ 
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> d) All of the mentioned
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+<br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 12: Which of the following is a type of wireless communication?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a)  LAN
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) WAN
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) PAN 
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> d)All of these
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 13:Which of the following android version is named Jelly Bean?
+
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a)  3.1
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)  2.1
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) 1.1
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> d) 4.1
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+     <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 14: Which of the following is not an example of wireless communication?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a)   Wi-Fi
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)  Mobiles
+
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> c) Landline
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d)Wireless Computer Parts
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+     <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 15: ADB stands for -
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="true">
+                <input type="checkbox"> a)  Android debug bridge
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)  Android delete bridge
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) Android destroy bridge
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) None of these
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+     <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 16: APK stands for -
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) Android Phone Kit
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)  Android Page Kit
+
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> c) Android Package Kit
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) None of the above
+
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 17: In the context of mobile communication what is the full form of LTE ?
+
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a) Level Telecom Advanced
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)  Long Terminal Advanced
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> c) Long Term Evolution
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) Long Time Evolution
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 18: What is Mobile communication?
+        </div>
+        <ul class="options">
+            <li class="option" data-answer="true">
+                <input type="checkbox"> a)   Allows to communicate from different locations without the use of physical medium
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)   Allows to communicate from different locations with the use of physical medium
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c)  Allows to communicate from same locations without the use of physical medium
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d)  Allows to communicate from same locations with the use of physical medium
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+    <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 19:  In which of the following countries, the first phone call was made?
+
+
+        <ul class="options">
+            <li class="option" data-answer="false">
+                <input type="checkbox"> a)  New York
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b)  Spain
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) India
+            </li>
+            <li class="option" data-answer="true">
+                <input type="checkbox"> d) France
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+</div>
+     <br>
+    <div class="quiz-container">
+        <div class="question">
+            Question 20:  What does API stand for?
+        <ul class="options">
+            <li class="option" data-answer="true">
+                <input type="checkbox"> a) Application Programming Interface
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> b) Android Programming Interface
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> c) Android Page Interface
+
+            </li>
+            <li class="option" data-answer="false">
+                <input type="checkbox"> d) Application Page Interface
+
+
+            </li>
+        </ul>
+        <div class="feedback"></div>
+    </div>
+</div>
+</div>
+   <br>
+    <script>
+        const options = document.querySelectorAll('.option');
+        options.forEach(option => {
+            option.addEventListener('click', function() {
+                const isCorrect = this.getAttribute('data-answer') === 'true';
+                if (isCorrect) {
+                    this.classList.add('correct');
+                    const feedbackSymbol = document.createElement('span');
+                    feedbackSymbol.innerHTML = '&#10004;'; // Checkmark symbol
+                    feedbackSymbol.className = 'feedback-symbol';
+                    this.appendChild(feedbackSymbol);
+                } else {
+                    this.classList.add('incorrect');
+                    const feedbackSymbol = document.createElement('span');
+                    feedbackSymbol.innerHTML = '&#10008;'; // Cross symbol
+                    feedbackSymbol.className = 'feedback-symbol';
+                    this.appendChild(feedbackSymbol);
+                }
+                options.forEach(opt => {
+                    if (opt !== this) {
+                        opt.classList.add('disabled');
+                    }
+                });
+            });
+        });
+    </script>
+
+ <!--footer-->
+ <footer style="background-color: #2c3e50; color: white; padding: 30px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Connect with Us</h4>
+                <p>Follow us on social media to stay updated!</p>
+                <div>
+                    <a href="https://www.facebook.com/" class="social-icon"><i class="fa-brands fa-facebook fa-bounce fa-2xs" style="color: #125fe2;"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-twitter fa-bounce fa-2xs" style="color: #125fe2;"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram fa-bounce fa-2xs" style="color: #125fe2;"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in fa-bounce fa-2xs" style="color: #125fe2;"></i></a>
+                    <a href="https://www.youtube.com/@technoyoddhaeklavya" class="social-icon"><i class="fa-brands fa-youtube fa-bounce fa-2xs" style="color:125fe2;"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4>Contact with website developer</h4>
+                <h3> <a href="file:///C:/website/Portfolio/bootstrap.html">  Priya Ranjan Pandey </a></h3>
+               <p>Email:   
+               <a href="priyaranjanpandey572@gmail.com">priyaranjanpandey572@gmail.com</p></a>
+                <p>Phone: +91 7717735815</p>
+
+            </div>
+            
+    </div>
+</footer>
+<footer style="background-color: #333; color: white; padding: 20px 0;">
+    <div class="container text-center">
+        <p>&copy; 2023 DIPLOMA ALL SEMESTER MCQ. All rights reserved.</p>
+    </div>
+</footer>
+ 
+</body>
+</html>
